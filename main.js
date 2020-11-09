@@ -10,4 +10,9 @@ $(function(){
     $('#gnb').removeClass('show');
   })
 
+  $(window).on('resize', function(){
+    var x = window.matchMedia("(min-width: 768px)");
+    if(x.matches) { $('#gnb').removeClass('show');}
+  })
+
 }) // end$
