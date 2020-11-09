@@ -6,13 +6,18 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 가변 이미지용 */
+.img-responsive {
+  width: 100%;
+}
+
 #main_header > .container{
-  background:#ccc;
+  /* background:#ccc; */
   height: 68px;
 }
 #main_header h1 {
   position: absolute;
-  left: 0; 
+  left: 20px; 
   line-height: 68px;
 }
 .btn_link {
@@ -33,6 +38,7 @@ body {
   text-align: center;
   /* outline: 1px solid red; */
   line-height: 68px;
+  z-index: 999;
 }
 #gnb ul { display: inline-block; }
 #gnb > ul > li {
@@ -42,6 +48,8 @@ body {
 #gnb > ul > li > a {
   display: block;
   color: #333;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 #main_header #toggle {
@@ -83,6 +91,16 @@ body {
     margin-left: 0;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     padding-left: 1.5em;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #main_header h1 { 
+    font-size: 28px;
+  }
+  #gnb > ul > li {
+    margin-left: 1em;
+    /* border: 2px solid green; */
   }
 }
 
